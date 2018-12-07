@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>python专场：初识python - ywainxiao</title>
+    <link href='/images/fav.png' rel='shortcut icon'>
+<link href='/atom.xml' rel='alternate' type='application/rss+xml'>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="/css/responsive.css">
+<script src="/js/jquery.js"></script>
+<script src="/js/basics.js"></script>
+<meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+<meta content='text/html; charset=utf-8' http-equiv='content-type'>
+
+
+  </head>
+  <body>
+    <header>
+  <a id='go-back-home' href='/'><img src='/images/scribble.png' alt='Home' width='53' height='59'></a>
+  <p>ywainxiao</p>
+  <p>enjoy code; enjoy life.</p>
+</header>
+
+    <div id='container'>
+      <div class='block'>
+  
+    <a class='main' href='/'>Blog</a>
+  
+    <a class='main' href='/about'>About</a>
+  
+    <a class='main' href='https://github.com/ywainxiao'>Github</a>
+  
+    <a class='main' href='/tags'>Contact</a>
+  
+</div>
+
+      <section class='paging'>
+  
+  
+    <div class='right'>
+      <a href='/2018/09/15/sublimetext/'>
+        ›
+      </a>
+    </div>
+  
+</section>
+
+      <div class='content'>
+        <section class='post'>
+          <h1>
+            <div class='date'>2018-12-01</div>
+            python专场：初识python
+          </h1>
+          <p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#你好，我叫python">你好，我叫python</a></li>
+<li><a href="#第一行代码">实操：第一行代码</a></li>
+</ul>
+<h4 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h4><blockquote>
+<p>这篇文章首先介绍python的历史、现状，分析为什么python值得一学，以及回答怎么学python这个问题。<br>后面部分介绍一种既简单也全面的搭建python编程环境的方法（一步到位就可以满足绝大多数python学习者的需求），然后主要介绍搭建好的环境如何使用，最后写出你的python第一行代码！</p>
+</blockquote>
+<h4 id="你好，我叫python"><a href="#你好，我叫python" class="headerlink" title="你好，我叫python"></a>你好，我叫python</h4><ol>
+<li><p>python的前世今生<br>python的创始人是荷兰人 Guido van Rossum，在1989年圣诞节期间，Guido为了打发圣诞节的无聊开发出来的一门计算机编程语言。 python的编译器是用计算机界最经典的语言—— C语言实现的，她的很多语法也是来源于C。不过python有着自己独特的设计哲学，即“简单”、“优雅”、“明确”，这也是我本人特别欣赏的三个哲学思想。python语言发展非常迅速，2011年1月，她被TIOBE编程语言排行榜评为2010年度语言，2018年5月份，python成功登顶编程排行榜，成为最流行的编程语言。</p>
+</li>
+<li><p>为什么选择学python<br>关于为什么学python，我总结成下面三点。</p>
+</li>
+</ol>
+<ul>
+<li>第一点，python很有用<br>不同于其他语言，python几乎被使用在计算机的各个领域：她是人工智能、数据分析、网页爬虫领域中用的最多的语言，几乎可以说是这些行业里面的无冕之王；不仅如此，python在网页制作、软件开发这些传统计算机运用领域中也能占据一席之地。简单讲就是，学会了python，进你可以紧跟计算机界的发展潮流，退你也可以一窥传统计算机应用领域的全貌。</li>
+<li>第二点，python超级好学<br>python被称为最接近自然语言的计算机编程语言，讲人话就是最像“人话”的编程语言：）他好学到什么程度呢，讲两个例子你就明白了。第一，很早之前中国就把学习python纳入到小学生的教材里面了，也就是说，只要你有小学生的知识水平，你就可以学python。第二，因为python几乎和自然语言差不多，只要你能看得懂26个英文单词+33个python关键字，你完全就能读懂python语言。</li>
+<li>第三点，python特别火<br>这点我觉得也很重要，你想想看啊，当有一样东西其他人都知道了，就你不知道的时候，你心里的阴影面积该有多大？以后或许还会分两种人，一种是学过python的人，一种是没学python的人。。。</li>
+</ul>
+<p>网上有一句流传很广的话：人生苦短，我用python。从今天开始，和我一起学python吧！</p>
+<ol start="3">
+<li>怎么学python<br>那怎么学python呢？这个。。。你让我回答，那我只能当仁不让的说，跟着大山学python啦！这个教程适合三类人：如果是略懂编程但不懂python，那很好，你可以在这里找到一条学习python的快速通道；如果是完全不懂编程的人，那更棒，你将会在这里写下人生中的第一行代码；但如果你是业界大牛、行业能手，那。。。你可以指出我的错误，这样也能帮助到其他人。</li>
+</ol>
+<p>这里有两个小窍门，一个是我的博客里面每篇文章都有目录，你可以直接点击“实操：第一行代码”，从而跳过已经看过的知识部分到实际操作部分；另一个提示是，虽然我的博客在手机端可以很方便的访问，不过我建议你开始动手操作的时候，最好在电脑端用浏览器打开，因为我认为，这样不仅仅便于学习，还在一定程度上增加了学习的仪式感。（特别是这一篇，因为涉及到下载安装包之类的）</p>
+<p>下面给两个我学python经常用的两个参考资料网址，其中菜鸟教程是专门写给初学者的，教程很详细而且质量也不错；python官方文档是最权威的、也是最有参考价值的python文档，写的很详实全面，基本上有一点的英语水平就能看懂，强烈建议大家经常翻看、查阅。<br><a href="http://www.runoob.com/python3/python3-tutorial.html" target="_blank" rel="noopener">python菜鸟教程</a><br><a href="https://docs.python.org/3/index.html" target="_blank" rel="noopener">python官方文档</a></p>
+<p>这里你可以看到，这两个链接在公众号里面是以纯文本显示的，很难看而且很不方便。在我的博客里面是以链接显示，你可以直接点击后，快速跳转到相应网页。</p>
+<h4 id="第一行代码"><a href="#第一行代码" class="headerlink" title="第一行代码"></a>第一行代码</h4><p>要写代码，并且让计算机执行你写的代码，需要在计算机上搭建相应代码的编译环境，简单讲就是要把你写的代码翻译成计算机可以理解的东西。所以我们写代码前需要先搭建python环境，里面就包含了python的编辑器、编译器等等。这里推荐使用Anaconda，这是一个专门用于python编程的开源发行版本，里面包含了绝大多数python编程需要的工具。安装Anaconda非常简单，大家直接从官网下载安装就可以。<br><a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">anaconda下载官网</a></p>
+<p>安装好Anaconda以后，Windows系统按Win按键打开开始菜单，发现里面有Jupyter Notebook、Anaconda Navigator、Anaconda Prompt和Spyder这几个工具，其中Spyder是一种很传统的python语言集成开发环境，Anaconda Navigator是Anaconda的界面化的导航工具，Anaconda Prompt是Anaconda的命令行工具，相当于Windows系统的cmd。这里主要介绍Jupyter Notebook（为写作方便后面直接写Jupyter），这是一种网页版的编程+笔记工具，不但可以用来写代码、运行代码，还可以在写代码的同时写笔记、做展示，个人觉得非常好用，而且非常适合初学者使用。<br><img src="https://github.com/ywainxiao/blogpictures/blob/master/python%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/note%E7%95%8C%E9%9D%A2.PNG?raw=true" alt="jiemian"></p>
+<p>直接点击Jupyter就可以启动，启动后界面就像上面这样。你们的启动界面可能包含了一大堆的杂七杂八的文件，原因是Jupyter运行的是系统默认的文件夹路径，虽然不影响使用，但为了以后方便，我还是把默认路径改成了我自己设定的路径。具体方法参考下面：<br><img src="https://raw.githubusercontent.com/ywainxiao/blogpictures/master/python%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/%E8%B7%AF%E5%BE%84.PNG" alt="path"></p>
+<p>第一步，点击开始菜单里的Anaconda Prompt，打开后输入命令jupyter notebook –generate-config，这句命令意思是生成配置文件，按下回车键会生成相应的配置文件（因为我之前输入过，系统提示我是不是要覆盖掉，第一次输入不会有这个提示）。<br><img src="https://github.com/ywainxiao/blogpictures/blob/master/python%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/%E4%BF%AE%E6%94%B9%E8%B7%AF%E5%BE%840.PNG?raw=true" alt="changepath0"></p>
+<p>第二步，根据系统返回的信息里面的文件路径，找到配置文件jupyter_notebook_config.py，打开后按下Ctrl+F查找c.NotebookApp.notebook_dir，在后面输入你自己希望的Jupyter运行文件的路径，保存配置文件后退出。<br><img src="https://raw.githubusercontent.com/ywainxiao/blogpictures/master/python%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/%E4%BF%AE%E6%94%B9%E8%B7%AF%E5%BE%84.PNG" alt="changepath1"></p>
+<p>第三步，在开始菜单右键点击Jupyter，点击更多-打开文件位置，找到Jupyter的快捷方式文件，右键点击Jupyter快捷方式文件，选择属性，删除掉目标栏里面的%USERPROFILE%，点击确认。重新点击Jupyter启动后打开的运行路径就是自己设定的文件夹了。<br><img src="https://github.com/ywainxiao/blogpictures/blob/master/python%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/%E5%B1%9E%E6%80%A7.PNG?raw=true" alt="changepath2"></p>
+<p>下面简单介绍Jupyter的使用方法，并用它写出第一行python代码！</p>
+<p><img src="https://github.com/ywainxiao/blogpictures/blob/master/python%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/%E6%96%B0%E5%BB%BA.PNG?raw=true" alt="new"><br>在右上角点击New新建一个编写python代码的文件，出现下面界面。在主界面上面试菜单栏和工具栏，主界面下面是一个个方框，叫做cell，是我们写代码、写笔记的主要场所。cell有两种模式，一种是编辑模式，一种是运行模式，编辑模式下显示你输入的纯代码、纯文本，运行模式下显示运行代码后的结果。你可以在运行模式下鼠标点击或者直接按下enter键，进入编辑模式。<br><img src="https://github.com/ywainxiao/blogpictures/blob/master/python%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/cell.PNG?raw=true" alt="cell1"><br><img src="https://github.com/ywainxiao/blogpictures/blob/master/python%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/cell2.PNG?raw=true" alt="cell2"><br>在cell里面敲入最经典的入门级代码，按下shift+enter键你就会看到运行结果。你还可以输入一些简单的运算命令，按下ctrl+enter，也能得到运算的结果。这里说一下最常用的两个快捷键，shift+enter Ctrl+enter，前一个是运行这个cell里面的代码，并且自动在下面打开一个新的cell，后一个只是运行cell里面的代码，不会生成新的cell。Jupyter的快捷键有很多，你可以百度，尝试一遍，然后慢慢熟悉。</p>
+<p>你也可以写笔记，点击一个cell，在工具栏选择Markdown（默认情况是code，用来输入代码），写入下面的文本，同样运行后你就可以看到结果。markdown是一种专门来做笔记的标记语言，非常容易学而且很有用，如果感兴趣可以参考我写的教程。<br><a href="https://ywainxiao.github.io/2018/08/23/markdown_gram/" target="_blank" rel="noopener">人生苦短，我用markdown！</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'Hello World!'</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">### python</span></span><br><span class="line"><span class="bullet">- </span>I like python.</span><br><span class="line"><span class="bullet">- </span>How about you?</span><br></pre></td></tr></table></figure>
+<p>python第一篇：初识python 就结束了，如果对你帮助，欢迎看后续更新！</p>
+<p>PS如果觉得好，请回到公众号随手点赞一下，你的支持，是我写出好文章的最大鼓励和动力。</p>
+<hr>
+<pre><code>欢迎关注我的微信公众号：大学启示录
+</code></pre><p><img src="https://raw.githubusercontent.com/ywainxiao/ywainxiao.github.io/master/images/%E5%8D%9A%E5%AE%A2/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E5%8A%A8%E5%8A%A8%E5%B0%8F%E6%89%8B.PNG" alt="二维码"></p>
+<hr>
+<p><a href="https://ywainxiao.github.io/2018/08/23/markdown_gram/" target="_blank" rel="noopener">上一篇：人生苦短,我用markdown!</a></p>
+
+          <br>
+<p></p>
+
+        </section>
+      </div>
+      
+      <div class='block'>
+  
+    <a class='main' href='/'>Blog</a>
+  
+    <a class='main' href='/about'>About</a>
+  
+    <a class='main' href='https://github.com/ywainxiao'>Github</a>
+  
+    <a class='main' href='/tags'>Contact</a>
+  
+</div>
+
+    </div>
+    <footer>
+  <span class='muted'>Powered by ywainxiao.</span><br>
+  <span class='muted'>Simplicity is the ultimate sophistication.</a>
+  <br>
+  <br>
+</footer>
+
+  </body>
+</html>
