@@ -1,0 +1,183 @@
+<html>
+  <head>
+    <title> - ywainxiao</title>
+    <link href='/images/fav.png' rel='shortcut icon'>
+<link href='/atom.xml' rel='alternate' type='application/rss+xml'>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="/css/responsive.css">
+<script src="/js/jquery.js"></script>
+<script src="/js/basics.js"></script>
+<meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+<meta content='text/html; charset=utf-8' http-equiv='content-type'>
+
+
+  </head>
+  <body>
+    <header>
+  <a id='go-back-home' href='/'><img src='/images/ME.jpg' alt='Home' width='53' height='59'></a>
+  <p>ywainxiao</p>
+  <p>enjoy code; enjoy life.</p>
+</header>
+
+    <div id='container'>
+      <div class='block'>
+  
+    <a class='main' href='/'>Blog</a>
+  
+    <a class='main' href='/about'>About</a>
+  
+    <a class='main' href='https://github.com/ywainxiao'>Github</a>
+  
+    <a class='main' href='/tags'>Contact</a>
+  
+</div>
+
+      <section class='paging'>
+  
+    <div class='left'>
+      <a href='/2020/11/25/1/'>
+        ‹
+      </a>
+    </div>
+  
+  
+    <div class='right'>
+      <a href='/2020/11/25/0/'>
+        ›
+      </a>
+    </div>
+  
+</section>
+
+      <div class='content'>
+        <section class='post'>
+          <h1>
+            <div class='date'>2020-11-25</div>
+            
+          </h1>
+          <h1 id="NumPy-数组创建例程"><a href="#NumPy-数组创建例程" class="headerlink" title="NumPy - 数组创建例程"></a>NumPy - 数组创建例程</h1><p>新的<code>ndarray</code>对象可以通过任何下列数组创建例程或使用低级<code>ndarray</code>构造函数构造。</p>
+<h2 id="numpy-empty"><a href="#numpy-empty" class="headerlink" title="numpy.empty"></a><code>numpy.empty</code></h2><p>它创建指定形状和<code>dtype</code>的未初始化数组。 它使用以下构造函数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">numpy.empty(shape, dtype = float, order = &apos;C&apos;)</span><br></pre></td></tr></table></figure>
+<p>构造器接受下列参数：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>参数及描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td><code>Shape</code> 空数组的形状，整数或整数元组</td>
+</tr>
+<tr>
+<td>2.</td>
+<td><code>Dtype</code> 所需的输出数组类型，可选</td>
+</tr>
+<tr>
+<td>3.</td>
+<td><code>Order</code> <code>&#39;C&#39;</code>为按行的 C 风格数组，<code>&#39;F&#39;</code>为按列的 Fortran 风格数组</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>下面的代码展示空数组的例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np </span><br><span class="line">x = np.empty([3,2], dtype =  int)  </span><br><span class="line">print x</span><br></pre></td></tr></table></figure>
+<p>输出如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[[22649312    1701344351] </span><br><span class="line"> [1818321759  1885959276] </span><br><span class="line"> [16779776    156368896]]</span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong>：数组元素为随机值，因为它们未初始化。</p>
+<h2 id="numpy-zeros"><a href="#numpy-zeros" class="headerlink" title="numpy.zeros"></a><code>numpy.zeros</code></h2><p>返回特定大小，以 0 填充的新数组。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">numpy.zeros(shape, dtype = float, order = &apos;C&apos;)</span><br></pre></td></tr></table></figure>
+<p>构造器接受下列参数：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>参数及描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td><code>Shape</code> 空数组的形状，整数或整数元组</td>
+</tr>
+<tr>
+<td>2.</td>
+<td><code>Dtype</code> 所需的输出数组类型，可选</td>
+</tr>
+<tr>
+<td>3.</td>
+<td><code>Order</code> <code>&#39;C&#39;</code>为按行的 C 风格数组，<code>&#39;F&#39;</code>为按列的 Fortran 风格数组</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 含有 5 个 0 的数组，默认类型为 float  </span><br><span class="line">import numpy as np </span><br><span class="line">x = np.zeros(5)  </span><br><span class="line">print x</span><br></pre></td></tr></table></figure>
+<p>输出如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ 0.  0.  0.  0.  0.]</span><br></pre></td></tr></table></figure>
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np </span><br><span class="line">x = np.zeros((5,), dtype = np.int)  </span><br><span class="line">print x</span><br></pre></td></tr></table></figure>
+<p>输出如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[0  0  0  0  0]</span><br></pre></td></tr></table></figure>
+<h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 自定义类型 </span><br><span class="line">import numpy as np </span><br><span class="line">x = np.zeros((2,2), dtype =  [(&apos;x&apos;,  &apos;i4&apos;),  (&apos;y&apos;,  &apos;i4&apos;)])  </span><br><span class="line">print x</span><br></pre></td></tr></table></figure>
+<p>输出如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[(0,0)(0,0)]</span><br><span class="line"> [(0,0)(0,0)]]</span><br></pre></td></tr></table></figure>
+<h2 id="numpy-ones"><a href="#numpy-ones" class="headerlink" title="numpy.ones"></a><code>numpy.ones</code></h2><p>返回特定大小，以 1 填充的新数组。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">numpy.ones(shape, dtype = None, order = &apos;C&apos;)</span><br></pre></td></tr></table></figure>
+<p>构造器接受下列参数：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>参数及描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td><code>Shape</code> 空数组的形状，整数或整数元组</td>
+</tr>
+<tr>
+<td>2.</td>
+<td><code>Dtype</code> 所需的输出数组类型，可选</td>
+</tr>
+<tr>
+<td>3.</td>
+<td><code>Order</code> <code>&#39;C&#39;</code>为按行的 C 风格数组，<code>&#39;F&#39;</code>为按列的 Fortran 风格数组</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例-1-1"><a href="#示例-1-1" class="headerlink" title="示例 1"></a>示例 1</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 含有 5 个 1 的数组，默认类型为 float  </span><br><span class="line">import numpy as np </span><br><span class="line">x = np.ones(5)  print x</span><br></pre></td></tr></table></figure>
+<p>输出如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ 1.  1.  1.  1.  1.]</span><br></pre></td></tr></table></figure>
+<h3 id="示例-2-1"><a href="#示例-2-1" class="headerlink" title="示例 2"></a>示例 2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np </span><br><span class="line">x = np.ones([2,2], dtype =  int)  </span><br><span class="line">print x</span><br></pre></td></tr></table></figure>
+<p>输出如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[1  1] </span><br><span class="line"> [1  1]]</span><br></pre></td></tr></table></figure>
+
+          <br>
+<p></p>
+
+        </section>
+      </div>
+      
+      <div class='block'>
+  
+    <a class='main' href='/'>Blog</a>
+  
+    <a class='main' href='/about'>About</a>
+  
+    <a class='main' href='https://github.com/ywainxiao'>Github</a>
+  
+    <a class='main' href='/tags'>Contact</a>
+  
+</div>
+
+    </div>
+    <footer>
+  <span class='muted'>Powered by ywainxiao.</span><br>
+  <span class='muted'>Simplicity is the ultimate sophistication.</a>
+  <br>
+  <br>
+</footer>
+
+  </body>
+</html>
