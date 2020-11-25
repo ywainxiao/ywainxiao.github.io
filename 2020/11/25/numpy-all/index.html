@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title> - ywainxiao</title>
+    <title>numpy_all - ywainxiao</title>
     <link href='/images/fav.png' rel='shortcut icon'>
 <link href='/atom.xml' rel='alternate' type='application/rss+xml'>
 <link rel="stylesheet" href="/css/style.css">
@@ -37,7 +37,7 @@
   
   
     <div class='right'>
-      <a href='/2020/11/25/1/'>
+      <a href='/2019/01/05/pm25project - sta/'>
         ›
       </a>
     </div>
@@ -48,9 +48,47 @@
         <section class='post'>
           <h1>
             <div class='date'>2020-11-25</div>
-            
+            numpy_all
           </h1>
-          <h1 id="NumPy-Ndarray-对象"><a href="#NumPy-Ndarray-对象" class="headerlink" title="NumPy - Ndarray 对象"></a>NumPy - Ndarray 对象</h1><p>NumPy 中定义的最重要的对象是称为 <code>ndarray</code> 的 N 维数组类型。 它描述相同类型的元素集合。 可以使用基于零的索引访问集合中的项目。</p>
+          <h1 id="NumPy-简介"><a href="#NumPy-简介" class="headerlink" title="NumPy - 简介"></a>NumPy - 简介</h1><p>NumPy 是一个 Python 包。 它代表 “Numeric Python”。 它是一个由多维数组对象和用于处理数组的例程集合组成的库。</p>
+<p><strong>Numeric</strong>，即 NumPy 的前身，是由 Jim Hugunin 开发的。 也开发了另一个包 Numarray ，它拥有一些额外的功能。 2005年，Travis Oliphant 通过将 Numarray 的功能集成到 Numeric 包中来创建 NumPy 包。 这个开源项目有很多贡献者。</p>
+<h2 id="NumPy-操作"><a href="#NumPy-操作" class="headerlink" title="NumPy 操作"></a>NumPy 操作</h2><p>使用NumPy，开发人员可以执行以下操作：</p>
+<ul>
+<li><p>数组的算数和逻辑运算。</p>
+</li>
+<li><p>傅立叶变换和用于图形操作的例程。</p>
+</li>
+<li><p>与线性代数有关的操作。 NumPy 拥有线性代数和随机数生成的内置函数。</p>
+</li>
+</ul>
+<h2 id="NumPy-–-MatLab-的替代之一"><a href="#NumPy-–-MatLab-的替代之一" class="headerlink" title="NumPy – MatLab 的替代之一"></a>NumPy – MatLab 的替代之一</h2><p>NumPy 通常与 <strong>SciPy</strong>（Scientific Python）和 <strong>Matplotlib</strong>（绘图库）一起使用。 这种组合广泛用于替代 MatLab，是一个流行的技术计算平台。 但是，Python 作为 MatLab 的替代方案，现在被视为一种更加现代和完整的编程语言。</p>
+<p>NumPy 是开源的，这是它的一个额外的优势。</p>
+<h1 id="NumPy-环境"><a href="#NumPy-环境" class="headerlink" title="NumPy - 环境"></a>NumPy - 环境</h1><blockquote>
+<h3 id="在线尝试"><a href="#在线尝试" class="headerlink" title="在线尝试"></a>在线尝试</h3><p>我们已经在线设置了 NumPy 编程环境，以便在线编译和执行所有可用的示例。 它向你提供了信心，并使您能够使用不同的选项验证程序， 随意修改任何示例并在线执行。</p>
+<p>使用我们的在线编译器尝试一下示例，它位于 <a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" rel="noopener">CodingGround</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; import numpy as np </span><br><span class="line">&gt; a =  &apos;hello world&apos;  </span><br><span class="line">&gt; print a</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>对于本教程中给出的大多数示例，你会在我们的网站代码部分的右上角找到一个<code>Try it</code>选项，这会把你带到在线编译器。 所以快来使用它，享受你的学习吧。</p>
+</blockquote>
+<p>标准的 Python 发行版不会与 NumPy 模块捆绑在一起。 一个轻量级的替代方法是使用流行的 Python 包安装程序 <strong>pip</strong> 来安装 NumPy。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install numpy</span><br></pre></td></tr></table></figure>
+<p>启用 NumPy 的最佳方法是使用特定于您的操作系统的可安装的二进制包。 这些二进制包含完整的 SciPy 技术栈（包括 NumPy，SciPy，matplotlib，IPython，SymPy 以及 Python 核心自带的其它包）。</p>
+<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p>Anaconda (from <a href="https://www.continuum.io" target="_blank" rel="noopener">www.continuum.io</a>) 是一个带有 SciPy 技术栈的免费 Python 发行版。 它也可用于 Linux 和 Mac.</p>
+<p>Canopy (<a href="https://www.enthought.com/products/canopy/" target="_blank" rel="noopener">www.enthought.com/products/canopy/</a>) 是可用的免费和商业发行版，带有完整的 SciPy 技术栈，可用于 Windows, Linux and Mac。</p>
+<p>Python (x,y): 是个免费的 Python 发行版，带有 SciPy 技术栈和 Spyder IDE，可用于 Windows。 (从这里下载：<a href="https://python-xy.github.io/" target="_blank" rel="noopener">www.python-xy.github.io/</a>)</p>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p>Linux 发行版的相应软件包管理器可用于安装一个或多个 SciPy 技术栈中的软件包。</p>
+<h2 id="对于-Ubuntu"><a href="#对于-Ubuntu" class="headerlink" title="对于 Ubuntu"></a>对于 Ubuntu</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python-numpy </span><br><span class="line">python-scipy python-matplotlibipythonipythonnotebook python-pandas </span><br><span class="line">python-sympy python-nose</span><br></pre></td></tr></table></figure>
+<h2 id="对于-Fedora"><a href="#对于-Fedora" class="headerlink" title="对于 Fedora"></a>对于 Fedora</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install numpyscipy python-matplotlibipython </span><br><span class="line">python-pandas sympy python-nose atlas-devel</span><br></pre></td></tr></table></figure>
+<h2 id="从源码构建"><a href="#从源码构建" class="headerlink" title="从源码构建"></a>从源码构建</h2><p>核心 Python（2.6.x，2.7.x 和 3.2.x 起）必须安装<code>distutils</code>，<code>zlib</code>模块应该启用。</p>
+<p>GNU gcc（4.2及以上）C 编译器必须可用。</p>
+<p>要安装 NumPy，请运行以下命令。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Python setup.py install</span><br></pre></td></tr></table></figure>
+<p>要测试 NumPy 模块是否正确安装，请尝试从 Python 提示符导入它。</p>
+<p>如果未安装，将显示以下错误消息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last): </span><br><span class="line">   File &quot;&lt;pyshell#0&gt;&quot;, line 1, in &lt;module&gt; </span><br><span class="line">      import numpy </span><br><span class="line">ImportError: No module named &apos;numpy&apos;</span><br></pre></td></tr></table></figure>
+<p>或者，使用以下语法导入NumPy包。</p>
+<h1 id="NumPy-Ndarray-对象"><a href="#NumPy-Ndarray-对象" class="headerlink" title="NumPy - Ndarray 对象"></a>NumPy - Ndarray 对象</h1><p>NumPy 中定义的最重要的对象是称为 <code>ndarray</code> 的 N 维数组类型。 它描述相同类型的元素集合。 可以使用基于零的索引访问集合中的项目。</p>
 <p><code>ndarray</code>中的每个元素在内存中使用相同大小的块。 <code>ndarray</code>中的每个元素是数据类型对象的对象（称为 <code>dtype</code>）。</p>
 <p>从<code>ndarray</code>对象提取的任何元素（通过切片）由一个数组标量类型的 Python 对象表示。 下图显示了<code>ndarray</code>，数据类型对象（<code>dtype</code>）和数组标量类型之间的关系。</p>
 <p><img src="https://www.tutorialspoint.com//numpy/images/ndarray.jpg" alt="Ndarray"></p>
